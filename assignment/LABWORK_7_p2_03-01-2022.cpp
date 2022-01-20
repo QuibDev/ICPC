@@ -38,13 +38,13 @@ int main(){
     int n,i;
     n = 3;
 
-    //printf("enter number of books:");
-    //scanf(">> %d", &n);
+    cout << "enter number of books:";
+    cin >> n;
 
     if (n < 1) {
         cout << "\n\nInvalid number of books: ";
     } else {
-        struct Books b[n];
+        class Books b[n];
         cout << "\nEnter details of books: \n";
 
         for (i=0; i<n;i++){
@@ -60,7 +60,7 @@ int main(){
         // for comparision in bubblesrot 
 
 
-        Books c;
+        class Books c;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j<n-i-1; j++){
                 if (b[j].getPrice() < b[j+1].getPrice()) {
