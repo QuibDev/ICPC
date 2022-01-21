@@ -19,17 +19,16 @@ class parameterConstructor(){
         }
 }
 
-class copyConstructor
-{
-private:
-    int x, y;
-public:
-    copyConstructor(int x1, int y1) { x = x1; y = y1; }
+class copyConstructor(){
+    private:
+        int x, y;
+    public:
+        copyConstructor(int x1, int y1) { x = x1; y = y1; }
  
-    // Copy constructor
-    copyConstructor(const copyConstructor &p1) {x = p1.x; y = p1.y; }
+        // Copy constructor
+        copyConstructor(const copyConstructor &p1) {x = p1.x; y = p1.y; }
  
-    int getX()            {  return x; }
-    int getY()            {  return y; }
+        int getX()            {  return x; }
+        int getY()            {  return y; }
 };
  
